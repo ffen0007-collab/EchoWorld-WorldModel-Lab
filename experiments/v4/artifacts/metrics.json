@@ -1,0 +1,58 @@
+{
+  "version": "v4.0.0",
+  "seed": 2026,
+  "train_episodes": 40,
+  "train_pairs": 1500,
+  "test_episodes": 12,
+  "epochs": 5,
+  "architecture": "32x32 RGB -> 8x8x12 latent CNN -> action-conditioned convolutional GRU residual -> RGB decoder",
+  "rollout": {
+    "1": {
+      "closed_loop_mse": 0.006154189545971652,
+      "frozen_first_frame_mse": 0.003119000898247274,
+      "changed_region_mse": 0.04455250831828876,
+      "episodes": 12
+    },
+    "10": {
+      "closed_loop_mse": 0.024256546515971422,
+      "frozen_first_frame_mse": 0.01466388461024811,
+      "changed_region_mse": 0.029281155031640083,
+      "episodes": 12
+    },
+    "50": {
+      "closed_loop_mse": 0.020625843356053036,
+      "frozen_first_frame_mse": 0.022852036636322737,
+      "changed_region_mse": 0.03527265600860119,
+      "episodes": 12
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.04475402506192525,
+      "test_rollout_1_mse": 0.014547525090165436
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.033203187783559164,
+      "test_rollout_1_mse": 0.008946737798396498
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.027640349055329957,
+      "test_rollout_1_mse": 0.007711167854722589
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.022397268200914065,
+      "test_rollout_1_mse": 0.006407675449736416
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.018128022775053976,
+      "test_rollout_1_mse": 0.006371188152115792
+    }
+  ],
+  "runtime_seconds": 5.03,
+  "scope": "Synthetic EchoWorld frames, no Genie 4 weights or API, exploratory CPU experiment. 50-step rollout seeded from one observed frame."
+}
