@@ -1,0 +1,174 @@
+{
+  "config": {
+    "epochs": 2,
+    "train_episodes": 20,
+    "val_episodes": 5,
+    "test_episodes": 8
+  },
+  "data": {
+    "train_samples": 586,
+    "val_samples": 108,
+    "test_samples": 168,
+    "train_changed_fraction": 0.5699658703071673,
+    "test_changed_fraction": 0.5238095238095238,
+    "test_seed": 9027,
+    "split": "independent generated episodes; test not oversampled"
+  },
+  "variants": {
+    "copy_previous_frame": {
+      "metrics": {
+        "mse": 0.0034014310222119093,
+        "changed_mse": 0.09220290360683037,
+        "static_mse": 1.8826697602917154e-06,
+        "changed_pixel_fraction": 0.0368710458278656,
+        "tower_region_mse": 0.008658209815621376,
+        "dam_region_mse": 0.00649740407243371,
+        "vegetation_region_mse": 0.004544984549283981,
+        "river_region_mse": 0.002519225236028433,
+        "dam_presence_accuracy": 0.9523809552192688,
+        "dam_positive_count": 120,
+        "tower_lit_presence_accuracy": 0.976190447807312,
+        "tower_lit_positive_count": 27,
+        "grown_plant_presence_accuracy": 0.9702380895614624,
+        "grown_plant_positive_count": 52
+      },
+      "parameters": 0
+    },
+    "cnn_baseline": {
+      "metrics": {
+        "mse": 0.01963072642683983,
+        "changed_mse": 0.052734426319696256,
+        "static_mse": 0.018363430822705994,
+        "changed_pixel_fraction": 0.0368710458278656,
+        "tower_region_mse": 0.05492783710360527,
+        "dam_region_mse": 0.041077688336372375,
+        "vegetation_region_mse": 0.023999890312552452,
+        "river_region_mse": 0.01963675208389759,
+        "dam_presence_accuracy": 0.2857142984867096,
+        "dam_positive_count": 120,
+        "tower_lit_presence_accuracy": 0.8392857313156128,
+        "tower_lit_positive_count": 27,
+        "grown_plant_presence_accuracy": 0.6904761791229248,
+        "grown_plant_positive_count": 52
+      },
+      "parameters": 21219,
+      "training_seconds": 3.02,
+      "history": [
+        {
+          "epoch": 1,
+          "train_weighted_loss": 0.025064863137417685,
+          "val_mse": 0.02214386686682701,
+          "val_changed_mse": 0.06579661303643682
+        },
+        {
+          "epoch": 2,
+          "train_weighted_loss": 0.020825289444101548,
+          "val_mse": 0.020918142050504684,
+          "val_changed_mse": 0.05642548868478822
+        }
+      ]
+    },
+    "residual": {
+      "metrics": {
+        "mse": 0.003361174138262868,
+        "changed_mse": 0.08987571575580364,
+        "static_mse": 4.917540291594635e-05,
+        "changed_pixel_fraction": 0.0368710458278656,
+        "tower_region_mse": 0.008455175906419754,
+        "dam_region_mse": 0.006329522468149662,
+        "vegetation_region_mse": 0.004458297044038773,
+        "river_region_mse": 0.0024911724030971527,
+        "dam_presence_accuracy": 0.9523809552192688,
+        "dam_positive_count": 120,
+        "tower_lit_presence_accuracy": 0.976190447807312,
+        "tower_lit_positive_count": 27,
+        "grown_plant_presence_accuracy": 0.9702380895614624,
+        "grown_plant_positive_count": 52
+      },
+      "parameters": 21987,
+      "training_seconds": 2.22,
+      "history": [
+        {
+          "epoch": 1,
+          "train_weighted_loss": 0.003827331476422097,
+          "val_mse": 0.003394792787730694,
+          "val_changed_mse": 0.09539129714335291
+        },
+        {
+          "epoch": 2,
+          "train_weighted_loss": 0.0036676456403216097,
+          "val_mse": 0.0033776143100112677,
+          "val_changed_mse": 0.09529468967238076
+        }
+      ]
+    },
+    "residual_weighted": {
+      "metrics": {
+        "mse": 0.004290462471544743,
+        "changed_mse": 0.07830144353068015,
+        "static_mse": 0.0014571320090211682,
+        "changed_pixel_fraction": 0.0368710458278656,
+        "tower_region_mse": 0.008822503499686718,
+        "dam_region_mse": 0.006966925226151943,
+        "vegetation_region_mse": 0.005511957220733166,
+        "river_region_mse": 0.0036496110260486603,
+        "dam_presence_accuracy": 0.8333333134651184,
+        "dam_positive_count": 120,
+        "tower_lit_presence_accuracy": 0.976190447807312,
+        "tower_lit_positive_count": 27,
+        "grown_plant_presence_accuracy": 0.9702380895614624,
+        "grown_plant_positive_count": 52
+      },
+      "parameters": 21987,
+      "training_seconds": 2.3,
+      "history": [
+        {
+          "epoch": 1,
+          "train_weighted_loss": 0.028755042771888267,
+          "val_mse": 0.004824790172278881,
+          "val_changed_mse": 0.08491026402833377
+        },
+        {
+          "epoch": 2,
+          "train_weighted_loss": 0.026989606758992826,
+          "val_mse": 0.004193037748336792,
+          "val_changed_mse": 0.08382971161981588
+        }
+      ]
+    },
+    "convgru_weighted": {
+      "metrics": {
+        "mse": 0.006215051282197237,
+        "changed_mse": 0.0711405304691195,
+        "static_mse": 0.003729537623952103,
+        "changed_pixel_fraction": 0.0368710458278656,
+        "tower_region_mse": 0.009617777541279793,
+        "dam_region_mse": 0.007038031704723835,
+        "vegetation_region_mse": 0.006302825175225735,
+        "river_region_mse": 0.00638952711597085,
+        "dam_presence_accuracy": 0.9523809552192688,
+        "dam_positive_count": 120,
+        "tower_lit_presence_accuracy": 0.976190447807312,
+        "tower_lit_positive_count": 27,
+        "grown_plant_presence_accuracy": 0.9702380895614624,
+        "grown_plant_positive_count": 52
+      },
+      "parameters": 39003,
+      "training_seconds": 11.28,
+      "history": [
+        {
+          "epoch": 1,
+          "train_weighted_loss": 0.028118172800327322,
+          "val_mse": 0.004554512910544872,
+          "val_changed_mse": 0.08324078751661232
+        },
+        {
+          "epoch": 2,
+          "train_weighted_loss": 0.026378757437951737,
+          "val_mse": 0.0058783190324902534,
+          "val_changed_mse": 0.07587555814380488
+        }
+      ]
+    }
+  }
+}

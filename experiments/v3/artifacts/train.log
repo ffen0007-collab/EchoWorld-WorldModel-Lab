@@ -1,0 +1,9 @@
+BaselineCNN plain 1 val 0.02214 change 0.0658
+BaselineCNN plain 2 val 0.02092 change 0.05643
+ResidualCNN plain 1 val 0.00339 change 0.09539
+ResidualCNN plain 2 val 0.00338 change 0.09529
+ResidualCNN weighted 1 val 0.00482 change 0.08491
+ResidualCNN weighted 2 val 0.00419 change 0.08383
+ResidualConvGRU weighted 1 val 0.00455 change 0.08324
+ResidualConvGRU weighted 2 val 0.00588 change 0.07588
+FINISHED {"copy_previous_frame": 0.0034014310222119093, "cnn_baseline": 0.01963072642683983, "residual": 0.003361174138262868, "residual_weighted": 0.004290462471544743, "convgru_weighted": 0.006215051282197237}
