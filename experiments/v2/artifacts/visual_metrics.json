@@ -1,0 +1,35 @@
+{
+  "train_size": 650,
+  "test_size": 120,
+  "test_mse": 0.01584719866514206,
+  "test_mae": 0.08416750282049179,
+  "copy_baseline_mse": 0.0034143938682973385,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.027298,
+      "test_mse": 0.022576,
+      "copy_baseline_mse": 0.003414
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.022592,
+      "test_mse": 0.021927,
+      "copy_baseline_mse": 0.003414
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.021444,
+      "test_mse": 0.020112,
+      "copy_baseline_mse": 0.003414
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.019073,
+      "test_mse": 0.015847,
+      "copy_baseline_mse": 0.003414
+    }
+  ],
+  "resolution": 32,
+  "method": "CNN input RGB previous frame + 6 action planes -> next RGB; synthetic deterministic simulator-generated images; independent test RNG seed"
+}

@@ -1,0 +1,1838 @@
+{
+  "rollout10": {
+    "steps": 10,
+    "episodes": 100,
+    "mean_mae_by_step": [
+      0.342,
+      0.555,
+      2.225,
+      5.582,
+      2.965,
+      2.736,
+      3.052,
+      3.668,
+      3.462,
+      3.555
+    ],
+    "mean_bool_accuracy_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      0.9988,
+      0.9988,
+      0.9988,
+      0.995,
+      0.9962,
+      0.995,
+      0.995
+    ],
+    "final_mae": 3.556,
+    "final_bool_accuracy": 0.995,
+    "overall_mae": 2.814,
+    "final_mae_p90": 6.145,
+    "examples": [
+      {
+        "episode": 28,
+        "actions": [
+          "dam",
+          "open",
+          "sun",
+          "open",
+          "seed",
+          "rain",
+          "sun",
+          "seed",
+          "rain",
+          "wind"
+        ],
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": true,
+          "wet": 74,
+          "eco": 10,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": true,
+          "wet": 80.0,
+          "eco": 71.0,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "final_mae": 33.5
+      },
+      {
+        "episode": 14,
+        "actions": [
+          "sun",
+          "seed",
+          "wind",
+          "dam",
+          "seed",
+          "seed",
+          "wind",
+          "rain",
+          "sun",
+          "seed"
+        ],
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40,
+          "eco": 10,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 43.4,
+          "eco": 64.3,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "final_mae": 28.849999999999998
+      },
+      {
+        "episode": 71,
+        "actions": [
+          "dam",
+          "rain",
+          "open",
+          "sun",
+          "seed",
+          "sun",
+          "open",
+          "dam",
+          "sun",
+          "dam"
+        ],
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 59,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 61.1,
+          "eco": 69.7,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "final_mae": 16.2
+      }
+    ]
+  },
+  "rollout50": {
+    "steps": 50,
+    "episodes": 100,
+    "mean_mae_by_step": [
+      0.333,
+      0.604,
+      2.21,
+      5.438,
+      2.588,
+      2.592,
+      2.919,
+      2.886,
+      3.573,
+      3.055,
+      3.308,
+      2.96,
+      2.891,
+      2.848,
+      2.915,
+      2.254,
+      2.318,
+      2.179,
+      2.14,
+      2.141,
+      1.916,
+      1.761,
+      1.741,
+      1.602,
+      1.533,
+      1.492,
+      1.549,
+      1.473,
+      1.49,
+      1.418,
+      1.375,
+      1.252,
+      1.462,
+      1.229,
+      1.146,
+      1.026,
+      1.071,
+      0.925,
+      1.01,
+      0.969,
+      1.078,
+      1.031,
+      1.09,
+      0.959,
+      0.881,
+      1.024,
+      0.963,
+      1.16,
+      1.217,
+      1.134
+    ],
+    "mean_bool_accuracy_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9988,
+      0.9988,
+      0.9962,
+      0.995,
+      0.9962,
+      0.9938,
+      0.9975,
+      0.9975,
+      0.995,
+      0.9962,
+      0.9962,
+      0.9962,
+      0.9962,
+      0.9962,
+      0.9962,
+      0.9975,
+      0.9975,
+      0.9975,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "final_mae": 1.134,
+    "final_bool_accuracy": 1.0,
+    "overall_mae": 1.803,
+    "final_mae_p90": 2.305,
+    "examples": [
+      {
+        "episode": 39,
+        "actions": [
+          "seed",
+          "rain",
+          "sun",
+          "dam",
+          "open",
+          "seed",
+          "seed",
+          "open",
+          "dam",
+          "wind",
+          "dam",
+          "seed",
+          "seed",
+          "rain",
+          "wind",
+          "sun",
+          "rain",
+          "open",
+          "sun",
+          "seed",
+          "sun",
+          "seed",
+          "seed",
+          "sun",
+          "wind",
+          "rain",
+          "open",
+          "open",
+          "seed",
+          "wind",
+          "sun",
+          "dam",
+          "rain",
+          "seed",
+          "wind",
+          "open",
+          "seed",
+          "sun",
+          "open",
+          "dam",
+          "sun",
+          "open",
+          "sun",
+          "wind",
+          "sun",
+          "dam",
+          "dam",
+          "wind",
+          "open",
+          "open"
+        ],
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 100,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 93.0,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "final_mae": 3.5
+      },
+      {
+        "episode": 28,
+        "actions": [
+          "dam",
+          "wind",
+          "dam",
+          "sun",
+          "sun",
+          "dam",
+          "open",
+          "open",
+          "seed",
+          "wind",
+          "open",
+          "seed",
+          "dam",
+          "wind",
+          "dam",
+          "sun",
+          "wind",
+          "dam",
+          "dam",
+          "seed",
+          "sun",
+          "dam",
+          "sun",
+          "sun",
+          "sun",
+          "sun",
+          "dam",
+          "rain",
+          "seed",
+          "seed",
+          "sun",
+          "open",
+          "seed",
+          "wind",
+          "dam",
+          "rain",
+          "dam",
+          "sun",
+          "seed",
+          "wind",
+          "wind",
+          "seed",
+          "seed",
+          "wind",
+          "dam",
+          "seed",
+          "wind",
+          "sun",
+          "wind",
+          "dam"
+        ],
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 100,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 93.9,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "final_mae": 3.049999999999997
+      },
+      {
+        "episode": 96,
+        "actions": [
+          "seed",
+          "rain",
+          "sun",
+          "dam",
+          "open",
+          "rain",
+          "open",
+          "seed",
+          "wind",
+          "dam",
+          "rain",
+          "sun",
+          "open",
+          "seed",
+          "seed",
+          "sun",
+          "seed",
+          "rain",
+          "sun",
+          "sun",
+          "open",
+          "rain",
+          "sun",
+          "wind",
+          "dam",
+          "dam",
+          "rain",
+          "wind",
+          "dam",
+          "open",
+          "rain",
+          "wind",
+          "seed",
+          "sun",
+          "seed",
+          "dam",
+          "dam",
+          "wind",
+          "seed",
+          "rain",
+          "rain",
+          "rain",
+          "wind",
+          "rain",
+          "wind",
+          "sun",
+          "sun",
+          "wind",
+          "dam",
+          "sun"
+        ],
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 87,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 81.0,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "final_mae": 3.0
+      }
+    ]
+  },
+  "boundary": {
+    "cases": 2136,
+    "bool_accuracy": 0.9892,
+    "numeric_mae": 21.773,
+    "any_boolean_failure_rate": 0.0726,
+    "worst_cases": [
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 66.2,
+          "eco": 28.3,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "dam",
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 27.25
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40.5,
+          "eco": 39.7,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "dam",
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 17.4
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36.2,
+          "eco": 35.0,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "wind",
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 36.9
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": true
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36.5,
+          "eco": 32.1,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "dam",
+          "lit"
+        ],
+        "numeric_mae": 19.2
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45,
+          "eco": 130,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 31.7,
+          "eco": 39.4,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 51.95
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "open",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 47.4,
+          "eco": 25.9,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 38.25
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "open",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 41.5,
+          "eco": 31.1,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 36.2
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 37.7,
+          "eco": 40.5,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 33.4
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": true
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": true
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 66.4,
+          "eco": 17.2,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "lit"
+        ],
+        "numeric_mae": 32.7
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": true
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": true
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 71.5,
+          "eco": 13.4,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "lit"
+        ],
+        "numeric_mae": 32.05
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "seed",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40.2,
+          "eco": 49.0,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 27.9
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "seed",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40.6,
+          "eco": 48.7,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 27.85
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 38.4,
+          "eco": 21.6,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "gate"
+        ],
+        "numeric_mae": 25.4
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "dam",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 59,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 57.7,
+          "eco": 52.2,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 24.55
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "dam",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 59,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 58.2,
+          "eco": 55.7,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 22.55
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 69.0,
+          "eco": 35.6,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "gate"
+        ],
+        "numeric_mae": 22.2
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 72.5,
+          "eco": 36.2,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "gate"
+        ],
+        "numeric_mae": 20.15
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": true
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 70,
+          "seed": true,
+          "grown": false,
+          "dam": true,
+          "gate": false,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 32.7,
+          "eco": 33.9,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown",
+          "lit"
+        ],
+        "numeric_mae": 19.7
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 41.4,
+          "eco": 72.8,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 16.3
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "rain",
+        "truth": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 79,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": true,
+          "sun": false,
+          "wind": false,
+          "wet": 67.4,
+          "eco": 79.7,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 15.95
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 41.8,
+          "eco": 78.3,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 12.45
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": false
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 36.9,
+          "eco": 76.8,
+          "seed": true,
+          "grown": true,
+          "dam": true,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 12.05
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 70,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": false
+        },
+        "action": "seed",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": true,
+          "lit": true
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 47.6,
+          "eco": 88.9,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "gate",
+          "lit"
+        ],
+        "numeric_mae": 6.85
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 39.6,
+          "eco": 20.9,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 72.25
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45.1,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 45.1,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 39.7,
+          "eco": 20.9,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 72.25
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 46,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "wind",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 46,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": true,
+          "wet": 40.8,
+          "eco": 21.2,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 72.0
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "open",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40.4,
+          "eco": 21.9,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 71.35
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45.1,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "open",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 45.1,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 40.5,
+          "eco": 21.9,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 71.35
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 46,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "open",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 46,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 41.5,
+          "eco": 22.1,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 71.2
+      },
+      {
+        "state": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 65,
+          "eco": 100,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "action": "sun",
+        "truth": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 56,
+          "eco": 160,
+          "seed": true,
+          "grown": true,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "pred": {
+          "rain": false,
+          "sun": true,
+          "wind": false,
+          "wet": 56.1,
+          "eco": 20.6,
+          "seed": true,
+          "grown": false,
+          "dam": false,
+          "gate": false,
+          "lit": false
+        },
+        "bool_failures": [
+          "grown"
+        ],
+        "numeric_mae": 69.75
+      }
+    ],
+    "important_note": "Includes deliberately inconsistent/unreachable states to probe generalization; report these separately from reachable rollouts."
+  }
+}
