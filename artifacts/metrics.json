@@ -1,0 +1,18 @@
+{
+  "test": {
+    "samples": 4074,
+    "bool_accuracy": 0.9997,
+    "wet_eco_mae_points": 1.197,
+    "all_fields_correct_within_2pp": 0.7624
+  },
+  "challenge": {
+    "samples": 1100,
+    "bool_accuracy": 1.0,
+    "wet_eco_mae_points": 3.57,
+    "all_fields_correct_within_2pp": 0.6
+  },
+  "no_change_baseline": {
+    "bool_accuracy": 0.9109,
+    "wet_eco_mae_points": 5.133
+  }
+}
